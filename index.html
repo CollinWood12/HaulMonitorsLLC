@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haul Monitors | Phoenix Moving & Junk Hauling Company</title>
+  <meta name="description"
+    content="Professional and reliable moving and junk hauling services in Phoenix. Contact Haul Monitors for a stress-free moving and junk removal experience.">
+  <meta name="keywords"
+    content="Phoenix moving company, professional moving services, reliable movers, residential moves, commercial moves, junk hauling, junk removal">
+  <meta name="author" content="Your Name">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    .header-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  </style>
+
+  <!-- Section Meta Data -->
+  <meta name="description" content="Haul Monitors - Home Page">
+  <!-- Add more meta tags for each section as necessary -->
+
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="haul-monitors-logo.png" alt="Haul Monitors Logo" width="30" height="30">
+        Phoenix's Premier Moving & Junk Hauling Company
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="displaySection('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="displaySection('about')">About Haul Monitors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="displaySection('services')">Moving & Junk Hauling Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="displaySection('testimonials')">Customer Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="displaySection('estimates')">Get Estimate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tel:+15125160886">Contact Haul Monitors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Placeholder for dynamic content -->
+  <div id="contentArea" class="mt-5 pt-5">
+
+    <div id="home" class="section d-none">
+      <!-- Background Image and Button -->
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
+        style="height: 20%; background: url('Background.png') no-repeat center center; background-size: cover;">
+        <div class="container text-center">
+          <div class="py-5">
+            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="about" class="section d-none">
+      <!-- Background Image and Button -->
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
+        style="height: 20%; background: url('Background.png') no-repeat center center; background-size: cover;">
+        <div class="container text-center">
+          <div class="py-5">
+            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- About us paragraph -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">About Haul Monitors</h1>
+            <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim non tortor
+              tincidunt maximus. Vestibulum pellentesque mi ac ante sollicitudin, et condimentum est blandit. Maecenas
+              vel cursus massa, quis commodo lorem. Sed elementum urna nec dui interdum tristique. Fusce posuere justo
+              orci, ut euismod magna porta id.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="services" class="section d-none">
+      <!-- Background Image and Button -->
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
+        style="height: 20%; background: url('Background.png') no-repeat center center; background-size: cover;">
+        <div class="container text-center">
+          <div class="py-5">
+            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="testimonials" class="section d-none">
+      <!-- Background Image and Button -->
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
+        style="height: 20%; background: url('Background.png') no-repeat center center; background-size: cover;">
+        <div class="container text-center">
+          <div class="py-5">
+            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="estimates" class="section d-none">
+      <!-- Background Image and Button -->
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
+        style="height: 20%; background: url('Background.png') no-repeat center center; background-size: cover;">
+        <div class="container text-center">
+          <div class="py-5">
+            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Section JavaScript Code -->
+  <script src="app.js" defer></script>
+
+</body>
+
+</html>

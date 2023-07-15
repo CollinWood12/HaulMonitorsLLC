@@ -1,0 +1,16 @@
+.section-container {
+  gap: 20px;
+}
+.section-box {
+  cursor: pointer;
+}
+.section-box.active {
+  background-color: #e0e0e0;
+}
+.section-box p {
+  display: none;
+}
+.site-logo {
+  float: left;
+  background-size: 100% auto;
+}
