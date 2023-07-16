@@ -1,7 +1,6 @@
 .navbar-custom {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
 }
 
 .navbar-brand {
@@ -11,15 +10,32 @@
   margin-left: 1rem;
 }
 
+.navbar-brand > span {
+  white-space: nowrap; /* Do not wrap text initially */
+}
+
+/* Switch to a column layout and allow text wrapping on smaller screens */
+@media screen and (max-width: 992px) { /* Adjust this breakpoint to your preference */
+  .navbar-brand {
+    flex-direction: column;
+  }
+
+  .navbar-brand > span {
+    white-space: normal; /* Allow text to wrap onto a new line */
+  }
+}
+
+
+
 .navbar-logo {
-  height: 9vh;
-  width: auto;
-  object-fit: contain;
+  max-width: 200px; /* Adjust this to your preference */
+  height: auto;
 }
 
 .navbar-nav {
   margin-right: 1rem;
 }
+
 
 .jumbotron {
   background-image: url('images/Background.png');

@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let jumbotron = document.querySelector('.jumbotron');
 
+const sectionBackgrounds = {
+  'home': "url('images/Background-home.png')",
+  'about': "url('images/Background-about.png')",
+  'services': "url('images/Background-services.png')",
+  'testimonials': "url('images/Background-testimonials.png')",
+  'estimates': "url('images/Background-estimates.png')",
+}
+
 function displaySection(sectionId) {
   document.querySelectorAll('.section').forEach(function(section) {
     section.classList.add('d-none');
@@ -28,26 +36,7 @@ function displaySection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
     let jumbotron = document.getElementById('jumbotron-holder');
-    switch(sectionId) {
-      case 'home':
-        jumbotron.style.backgroundImage = "url('images/Background-home.png')";
-        break;
-      case 'about':
-        jumbotron.style.backgroundImage = "url('images/Background-about.png')";
-        break;
-      case 'services':
-        jumbotron.style.backgroundImage = "url('images/Background-services.png')";
-        break;
-      case 'testimonials':
-        jumbotron.style.backgroundImage = "url('images/Background-testimonials.png')";
-        break;
-      case 'estimates':
-        jumbotron.style.backgroundImage = "url('images/Background-estimates.png')";
-        break;
-      default:
-        break;
-    }
-    
+    jumbotron.style.backgroundImage = sectionBackgrounds[sectionId] || '';
     section.classList.remove('d-none');
   }
 }
