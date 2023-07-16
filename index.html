@@ -22,28 +22,29 @@
 <!-- Start of the body of the page -->
 
 <body>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom">
 
-<!-- Brand Logo and company name -->
-<a class="navbar-brand d-flex align-items-center" href="#">
-  <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" class="navbar-logo">
-  <span>Phoenix's Premier Moving & Junk Hauling Company</span>
-</a>
+<!-- Sticky navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-custom">
 
-    
-    <!-- Mobile responsive hamburger menu -->
-    <!-- (only shows up when on Mobile Device)-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
- 
-    <!-- Navigation links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-       <ul class="navbar-nav ml-auto">
+      <!-- Brand Logo and company name -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" class="navbar-logo">
+        <span>Phoenix's Premier Moving & Junk Hauling Company</span>
+      </a>
+
+
+      <!-- Mobile responsive hamburger menu -->
+      <!-- (only shows up when on Mobile Device)-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
           <!-- Each navigation link invokes a JavaScript function -->
- 
+
           <!-- HOME -->
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="displaySection('home')">Home</a>
@@ -68,92 +69,92 @@
           <li class="nav-item">
             <a class="nav-link" href="tel:+15125160886">Contact Haul Monitors</a>
           </li>
-       </ul>
-    </div>
- </nav>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- Dynamic Content Area -->
-  <div id="contentArea" class="mt-5 pt-5">
+    <!-- Dynamic Content Area -->
+    <div id="contentArea">
 
-    <!-- Background Image -->
-    <div id="jumbotron-holder">
-      <div class="jumbotron bg-light d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-          <div class="py-5">
-            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+      <!-- Background Image -->
+      <div id="jumbotron-holder">
+        <div class="jumbotron bg-light d-flex align-items-center justify-content-center">
+          <div class="container text-center">
+            <div class="py-5">
+              <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- "Home" section -->
-    <div id="home" class="section d-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-4 mt-5">Home</h1>
-            <p class="lead mt-3">Home section content...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- "About" section -->
-    <div id="about" class="section d-none">
-
-      <!-- About us paragraph -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-4 mt-5">About Haul Monitors</h1>
-            <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim non tortor
-              tincidunt maximus. Vestibulum pellentesque mi ac ante sollicitudin, et condimentum est blandit. Maecenas
-              vel cursus massa, quis commodo lorem. Sed elementum urna nec dui interdum tristique. Fusce posuere justo
-              orci, ut euismod magna porta id.</p>
+      <!-- "Home" section -->
+      <div id="home" class="section d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-4 mt-5">Home</h1>
+              <p class="lead mt-3">Home section content...</p>
+            </div>
           </div>
         </div>
       </div>
 
-    </div>
-    <!-- "Services" section -->
-    <div id="services" class="section d-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-4 mt-5">Our Services</h1>
-            <p class="lead mt-3">Services section content...</p>
+
+
+      <!-- "About" section -->
+      <div id="about" class="section d-none">
+
+        <!-- About us paragraph -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-4 mt-5">About Haul Monitors</h1>
+              <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim non tortor
+                tincidunt maximus. Vestibulum pellentesque mi ac ante sollicitudin, et condimentum est blandit. Maecenas
+                vel cursus massa, quis commodo lorem. Sed elementum urna nec dui interdum tristique. Fusce posuere justo
+                orci, ut euismod magna porta id.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- "Services" section -->
+      <div id="services" class="section d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-4 mt-5">Our Services</h1>
+              <p class="lead mt-3">Services section content...</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- "Testimonials" section -->
-    <div id="testimonials" class="section d-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-4 mt-5">Testimonials</h1>
-            <p class="lead mt-3">Testimonials section content...</p>
+      <!-- "Testimonials" section -->
+      <div id="testimonials" class="section d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-4 mt-5">Testimonials</h1>
+              <p class="lead mt-3">Testimonials section content...</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- "Estimates" section -->
-    <div id="estimates" class="section d-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="display-4 mt-5">Get an Estimate</h1>
-            <p class="lead mt-3">Estimates section content...</p>
+      <!-- "Estimates" section -->
+      <div id="estimates" class="section d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="display-4 mt-5">Get an Estimate</h1>
+              <p class="lead mt-3">Estimates section content...</p>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
-
-  </div>
-
+  
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
