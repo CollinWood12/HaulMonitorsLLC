@@ -23,23 +23,23 @@
 
 <body>
 
-<!-- Sticky navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-custom">
-
-      <!-- Brand Logo and company name -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" class="navbar-logo">
-        <span>Phoenix's Premier Moving & Junk Hauling Company</span>
-      </a>
-
-
-      <!-- Mobile responsive hamburger menu -->
-      <!-- (only shows up when on Mobile Device)-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+  <!-- Sticky navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-custom">
+  
+    <!-- Brand Logo and company name -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" class="navbar-logo">
+      <div class="text-center">
+        <span class="d-lg-inline">Phoenix's Premier Moving & Junk Hauling Company</span>
+      </div>
+    </a>
+    <!-- Mobile responsive hamburger menu -->
+    <!-- (only shows up when on Mobile Device)-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
       <!-- Navigation links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -151,6 +151,37 @@
             </div>
           </div>
         </div>
+        <div class="container">
+          <h2>Home Information Form</h2>
+          <form>
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+              <label for="homeSize">Approximate Home Size:</label>
+              <select class="form-control" id="homeSize" required>
+                <option value="" disabled selected>Select your home size</option>
+                <option value="1000-1500">1000-1500 sqft</option>
+                <option value="1750-2500">1750-2500 sqft</option>
+                <option value="3000+">3000+ sqft</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
 
     </div>
@@ -164,7 +195,6 @@
 
   <!-- Section JavaScript Code -->
   <script src="app.js" defer></script>
-
 </body>
 
 </html>
