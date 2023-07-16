@@ -5,106 +5,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haul Monitors | Phoenix Moving & Junk Hauling Company</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <!-- Section Meta Data -->
+  <meta name="description" content="Haul Monitors - Home Page">
   <meta name="description"
     content="Professional and reliable moving and junk hauling services in Phoenix. Contact Haul Monitors for a stress-free moving and junk removal experience.">
   <meta name="keywords"
     content="Phoenix moving company, professional moving services, reliable movers, residential moves, commercial moves, junk hauling, junk removal">
   <meta name="author" content="Your Name">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-  <!-- Custom CSS -->
-  <style>
-    .header-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .logo {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-    }
-  </style>
-
-  <!-- Section Meta Data -->
-  <meta name="description" content="Haul Monitors - Home Page">
-  <!-- Add more meta tags for each section as necessary -->
-
 </head>
 
-<body>
+<!-- Start of the body of the page -->
 
+<body>
   <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" width="30" height="30">
-        Phoenix's Premier Moving & Junk Hauling Company
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom">
+    <!-- Brand Logo and company name -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" class="navbar-logo">
+      Phoenix's Premier Moving & Junk Hauling Company
+    </a>
+    
+    <!-- Mobile responsive hamburger menu -->
+    <!-- (only shows up when on Mobile Device)-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ml-auto">
+          <!-- Each navigation link invokes a JavaScript function -->
+ 
+          <!-- HOME -->
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="displaySection('home')">Home</a>
           </li>
+          <!-- ABOUT -->
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="displaySection('about')">About Haul Monitors</a>
           </li>
+          <!-- SERVICES -->
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="displaySection('services')">Moving & Junk Hauling Services</a>
           </li>
+          <!-- TESTIMONIALS -->
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="displaySection('testimonials')">Customer Testimonials</a>
           </li>
+          <!-- ESTIMATES -->
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="displaySection('estimates')">Get Estimate</a>
           </li>
+          <!-- CONTACT -->
           <li class="nav-item">
             <a class="nav-link" href="tel:+15125160886">Contact Haul Monitors</a>
           </li>
-        </ul>
-      </div>
+       </ul>
     </div>
-  </nav>
+ </nav>
 
-  <!-- Placeholder for dynamic content -->
+  <!-- Dynamic Content Area -->
   <div id="contentArea" class="mt-5 pt-5">
 
-    <div id="home" class="section d-none">
-      <!-- Background Image and Button -->
-      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
-        style="height: 20%; background: url('images/Background.png') no-repeat center center; background-size: cover;">
+    <!-- Background Image -->
+    <div id="jumbotron-holder">
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center">
         <div class="container text-center">
           <div class="py-5">
             <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
           </div>
         </div>
       </div>
-
-
+    </div>
+    <!-- "Home" section -->
+    <div id="home" class="section d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Home</h1>
+            <p class="lead mt-3">Home section content...</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+
+
+    <!-- "About" section -->
     <div id="about" class="section d-none">
-      <!-- Background Image and Button -->
-      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
-        style="height: 20%; background: url('images/Background.png') no-repeat center center; background-size: cover;">
-        <div class="container text-center">
-          <div class="py-5">
-            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
-          </div>
-        </div>
-      </div>
 
       <!-- About us paragraph -->
       <div class="container">
@@ -119,41 +113,38 @@
         </div>
       </div>
 
-
     </div>
-
+    <!-- "Services" section -->
     <div id="services" class="section d-none">
-      <!-- Background Image and Button -->
-      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
-        style="height: 20%; background: url('images/Background.png') no-repeat center center; background-size: cover;">
-        <div class="container text-center">
-          <div class="py-5">
-            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Our Services</h1>
+            <p class="lead mt-3">Services section content...</p>
           </div>
         </div>
       </div>
     </div>
 
-
+    <!-- "Testimonials" section -->
     <div id="testimonials" class="section d-none">
-      <!-- Background Image and Button -->
-      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
-        style="height: 20%; background: url('images/Background.png') no-repeat center center; background-size: cover;">
-        <div class="container text-center">
-          <div class="py-5">
-            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Testimonials</h1>
+            <p class="lead mt-3">Testimonials section content...</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- "Estimates" section -->
     <div id="estimates" class="section d-none">
-      <!-- Background Image and Button -->
-      <div class="jumbotron bg-light d-flex align-items-center justify-content-center"
-        style="height: 20%; background: url('images/Background.png') no-repeat center center; background-size: cover;">
-        <div class="container text-center">
-          <div class="py-5">
-            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Get an Estimate</h1>
+            <p class="lead mt-3">Estimates section content...</p>
           </div>
         </div>
       </div>

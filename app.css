@@ -1,16 +1,29 @@
-.section-container {
-  gap: 20px;
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
 }
-.section-box {
-  cursor: pointer;
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
 }
-.section-box.active {
-  background-color: #e0e0e0;
+
+.navbar-logo {
+  height: 9vh;
+  width: auto;
+  object-fit: contain;
 }
-.section-box p {
-  display: none;
+
+.navbar-nav {
+  margin-right: 1rem;
 }
-.site-logo {
-  float: left;
-  background-size: 100% auto;
+
+.jumbotron {
+  background-image: url('images/Background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
