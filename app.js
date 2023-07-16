@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let jumbotron = document.querySelector('.jumbotron');
 
+
 const sectionBackgrounds = {
   'home': "url('images/Background-home.png')",
   'about': "url('images/Background-about.png')",
@@ -35,8 +36,9 @@ function displaySection(sectionId) {
 
   const section = document.getElementById(sectionId);
   if (section) {
-    let jumbotron = document.getElementById('jumbotron-holder');
+    let jumbotron = document.querySelector('.jumbotron');
     jumbotron.style.backgroundImage = sectionBackgrounds[sectionId] || '';
     section.classList.remove('d-none');
   }
 }
+
