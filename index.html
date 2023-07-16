@@ -25,7 +25,7 @@
 
   <!-- Sticky navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top navbar-custom">
-  
+
     <!-- Brand Logo and company name -->
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="images/haul-monitors-logo.png" alt="Haul Monitors Logo" class="navbar-logo">
@@ -39,153 +39,203 @@
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-      <!-- Navigation links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <!-- Each navigation link invokes a JavaScript function -->
 
-          <!-- HOME -->
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="displaySection('home')">Home</a>
-          </li>
-          <!-- ABOUT -->
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="displaySection('about')">About Haul Monitors</a>
-          </li>
-          <!-- SERVICES -->
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="displaySection('services')">Moving & Junk Hauling Services</a>
-          </li>
-          <!-- TESTIMONIALS -->
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="displaySection('testimonials')">Customer Testimonials</a>
-          </li>
-          <!-- ESTIMATES -->
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="displaySection('estimates')">Get Estimate</a>
-          </li>
-          <!-- CONTACT -->
-          <li class="nav-item">
-            <a class="nav-link" href="tel:+15125160886">Contact Haul Monitors</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Each navigation link invokes a JavaScript function -->
 
-    <!-- Dynamic Content Area -->
-    <div id="contentArea">
+        <!-- HOME -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="displaySection('home')">Home</a>
+        </li>
+        <!-- ABOUT -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="displaySection('about')">About Haul Monitors</a>
+        </li>
+        <!-- SERVICES -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="displaySection('services')">Moving & Junk Hauling Services</a>
+        </li>
+        <!-- TESTIMONIALS -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="displaySection('testimonials')">Customer Testimonials</a>
+        </li>
+        <!-- ESTIMATES -->
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="displaySection('estimates')">Get Estimate</a>
+        </li>
+        <!-- CONTACT -->
+        <li class="nav-item">
+          <a class="nav-link" href="tel:+15125160886">Contact Haul Monitors</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <!-- Background Image -->
-      <div id="jumbotron-holder">
-        <div class="jumbotron bg-light d-flex align-items-center justify-content-center">
-          <div class="container text-center">
-            <div class="py-5">
-              <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
-            </div>
+  <!-- Dynamic Content Area -->
+  <div id="contentArea">
+
+    <!-- Background Image -->
+    <div id="jumbotron-holder">
+      <div class="jumbotron bg-light d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+          <div class="py-5">
+            <button onclick="displaySection('estimates')" class="btn btn-primary btn-lg">Schedule a move!</button>
           </div>
         </div>
       </div>
-      <!-- "Home" section -->
-      <div id="home" class="section d-none">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1 class="display-4 mt-5">Home</h1>
-              <p class="lead mt-3">Home section content...</p>
-            </div>
+    </div>
+    <!-- "Home" section -->
+    <div id="home" class="section d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Home</h1>
+            <p class="lead mt-3">Home section content...</p>
           </div>
         </div>
       </div>
+    </div>
 
 
 
-      <!-- "About" section -->
-      <div id="about" class="section d-none">
+    <!-- "About" section -->
+    <div id="about" class="section d-none">
 
-        <!-- About us paragraph -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1 class="display-4 mt-5">About Haul Monitors</h1>
-              <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim non tortor
-                tincidunt maximus. Vestibulum pellentesque mi ac ante sollicitudin, et condimentum est blandit. Maecenas
-                vel cursus massa, quis commodo lorem. Sed elementum urna nec dui interdum tristique. Fusce posuere justo
-                orci, ut euismod magna porta id.</p>
-            </div>
+      <!-- About us paragraph -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">About Haul Monitors</h1>
+            <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non enim non tortor
+              tincidunt maximus. Vestibulum pellentesque mi ac ante sollicitudin, et condimentum est blandit. Maecenas
+              vel cursus massa, quis commodo lorem. Sed elementum urna nec dui interdum tristique. Fusce posuere justo
+              orci, ut euismod magna porta id.</p>
           </div>
-        </div>
-
-      </div>
-      <!-- "Services" section -->
-      <div id="services" class="section d-none">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1 class="display-4 mt-5">Our Services</h1>
-              <p class="lead mt-3">Services section content...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- "Testimonials" section -->
-      <div id="testimonials" class="section d-none">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1 class="display-4 mt-5">Testimonials</h1>
-              <p class="lead mt-3">Testimonials section content...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- "Estimates" section -->
-      <div id="estimates" class="section d-none">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1 class="display-4 mt-5">Get an Estimate</h1>
-              <p class="lead mt-3">Estimates section content...</p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <h2>Home Information Form</h2>
-          <form>
-            <div class="form-group">
-              <label for="firstName">First Name:</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name:</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-              <label for="phoneNumber">Phone Number:</label>
-              <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
-            </div>
-            <div class="form-group">
-              <label for="homeSize">Approximate Home Size:</label>
-              <select class="form-control" id="homeSize" required>
-                <option value="" disabled selected>Select your home size</option>
-                <option value="1000-1500">1000-1500 sqft</option>
-                <option value="1750-2500">1750-2500 sqft</option>
-                <option value="3000+">3000+ sqft</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
         </div>
       </div>
 
     </div>
-  
+    <!-- "Services" section -->
+    <div id="services" class="section d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Our Services</h1>
+            <p class="lead mt-3">Services section content...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "Testimonials" section -->
+    <div id="testimonials" class="section d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-4 mt-5">Testimonials</h1>
+            <p class="lead mt-3">Testimonials section content...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "Estimates" section -->
+    <div id="estimates" class="section d-none">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+          <!-- First div content -->
+          <div class="col-lg-6 my-4 px-lg-5">
+            <h1 class="display-4 text-center mt-5">Get an Estimate</h1>
+            <p class="lead mt-3 text-center">
+              Planning a move can be stressful, but at Haul Monitors, we make it simple.
+              Start by getting a free, no-obligation estimate for your move.
+              Fill out the Home Information Form and one of our move coordinators will contact you shortly with a quote.
+              We're here to make your move as smooth and hassle-free as possible.
+            </p>
+          </div>
+
+          <!-- Form in a card -->
+          <div class="col-lg-6 my-4 px-lg-5">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="text-center">Home Information Form</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <label for="homeSize">Approximate Home Size:</label>
+                    <select class="form-control" id="homeSize" required>
+                      <option value="" disabled selected>Select your home size</option>
+                      <option value="1000-1500">1000-1500 sqft</option>
+                      <option value="1750-2500">1750-2500 sqft</option>
+                      <option value="3000+">3000+ sqft</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    <!-- "Why Choose Us" section -->
+    <div id="whyChooseUs" class="row justify-content-center" style="background-color: #fbeaab;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 my-4 px-lg-5">
+            <h1 class="display-4 text-center mt-5">Why Choose Haul Monitors</h1>
+            <p class="lead mt-3 text-center">
+              When it comes to moving, we understand you have choices. So why should you choose Haul Monitors? Here
+              are just a few reasons:
+            </p>
+            <ul class="list-unstyled">
+              <li><strong>Expertise:</strong> We bring years of professional experience to make your move as smooth
+                as possible.</li>
+              <li><strong>Reliability:</strong> We ensure your belongings reach your new home safely and on time.
+              </li>
+              <li><strong>Customer Service:</strong> Our dedicated team is here to assist you every step of the way.
+                From your first contact with us, until the last box is unpacked, we're with you.</li>
+              <li><strong>Transparent Pricing:</strong> We provide upfront estimates without any hidden charges.
+              </li>
+            </ul>
+            <p class="lead mt-3 text-center">
+              So, are you ready to make a move? Contact us today to get started.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
