@@ -41,4 +41,5 @@ function displaySection(sectionId) {
     section.classList.remove('d-none');
   }
 }
+displaySection('home')
 
