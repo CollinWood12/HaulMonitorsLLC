@@ -1,6 +1,8 @@
 .navbar-custom {
   display: flex;
   justify-content: space-between;
+  border: 2px solid #c4a947 !important; 
+  border-radius: 0 !important;
 }
 
 .navbar-brand {
@@ -35,6 +37,7 @@
 }
 
 
+
 .jumbotron {
   background-image: url('images/Background.png');
   padding-top: 100px;
@@ -44,4 +47,17 @@
   /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
+}
+
+.btn-custom {
+  background-color: #fbeaab;
+  border-color: #fbeaab;
+  color: #000000; /* Change this if you want a different text color */
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+  background-color: #fad883; /* A slightly darker shade for hover */
+  border-color: #fad883; /* A slightly darker shade for hover */
 }
