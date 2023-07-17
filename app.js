@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  generateSections(['home', 'services', 'testimonials', 'estimates']);
-  displaySection('home');
-
   const sections = document.querySelectorAll(".section-box");
   sections.forEach(section => {
     section.addEventListener("click", function() {
@@ -43,3 +40,18 @@ function displaySection(sectionId) {
 }
 displaySection('home')
 
+// Email Stuff:
+
+emailjs.init("q9QvMWp4QaabKknY_"); // replace with your EmailJS user ID
+
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_jrg5grl","template_dw72gc7", e.target)
+    .then((result) => {
+        console.log('Email successfully sent!', result);
+    }, (error) => {
+        console.log('Email not sent.', error);
+    });
+}

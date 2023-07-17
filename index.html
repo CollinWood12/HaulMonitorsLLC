@@ -163,27 +163,26 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Home Information Form</h2>
-                <form>
+                <form id="myForm" onsubmit="sendEmail(event)">
                   <div class="form-group">
                     <label for="firstName">First Name:</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
                   </div>
                   <div class="form-group">
                     <label for="lastName">Last Name:</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
                   </div>
                   <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                   </div>
                   <div class="form-group">
                     <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number"
-                      required>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
                   </div>
                   <div class="form-group">
                     <label for="homeSize">Approximate Home Size:</label>
-                    <select class="form-control" id="homeSize" required>
+                    <select class="form-control" id="homeSize" name="homeSize" required>
                       <option value="" disabled selected>Select your home size</option>
                       <option value="1000-1500">1000-1500 sqft</option>
                       <option value="1750-2500">1750-2500 sqft</option>
@@ -195,6 +194,7 @@
               </div>
             </div>
           </div>
+          
 
         </div>
 
@@ -242,6 +242,9 @@
   <!-- Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
 
   <!-- Section JavaScript Code -->
   <script src="app.js" defer></script>
